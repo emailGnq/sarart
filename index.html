@@ -2,61 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Sarah Boylan Art - Coming Soon!</title>
-
     <style>
-        /* Apply a base font and background to the whole page */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Modern system font stack */
-            line-height: 1.6; /* Improves readability */
-            margin: 0; /* Remove default browser margins */
-            padding: 0; /* Remove default browser padding */
-            background-color: #f4f4f4; /* Light grey background */
-            color: #333; /* Default text color */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        /* Create a container for the main content */
         .container {
-            max-width: 800px; /* Set a maximum width for content on large screens */
-            margin: 40px auto; /* Add space top/bottom, and 'auto' left/right centers the container */
-            padding: 20px 30px; /* Add padding inside the container (top/bottom, left/right) */
-            background-color: #ffffff; /* White background for the content area */
-            text-align: center; /* Center the text inside the container */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
-            border-radius: 5px; /* Slightly rounded corners */
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
-
-        /* Style the main heading */
         h1 {
-            color: #0056b3; /* A distinct color for the heading */
-            font-size: 2em; /* Make heading larger */
+            color: #0056b3;
+            font-size: 2em;
+            margin-bottom: 0.5em; /* Adjust margin for logo spacing */
         }
-
-        /* Style paragraphs */
         p {
-            font-size: 1.1em; /* Slightly larger paragraph text */
-            margin-bottom: 1em; /* Space below paragraphs */
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+        .intro-paragraph { /* Added class to target the specific paragraph */
+             margin-top: 0.5em; /* Adjust margin for logo spacing */
         }
 
-        /* ** RESPONSIVE ADJUSTMENT ** */
-        /* Media Query: Apply these styles ONLY when screen width is 600px or less */
+        /* ** NEW CSS FOR THE LOGO ** */
+        .logo {
+            display: block; /* Makes the image a block element */
+            max-width: 100%; /* ** KEY FOR RESIZING ** Ensures image never exceeds container width */
+            height: auto;   /* Maintains the image's aspect ratio */
+            margin: 25px auto; /* Adds space above/below (25px) and centers horizontally (auto) */
+        }
+        /* ** END NEW CSS ** */
+
         @media (max-width: 600px) {
-            body {
-                /* Reduce font size slightly on smaller screens if needed */
-                 /* font-size: 95%; */
-            }
             .container {
-                margin: 20px 15px; /* Reduce margins on smaller screens */
-                padding: 15px 20px; /* Reduce padding on smaller screens */
+                margin: 20px 15px;
+                padding: 15px 20px;
             }
             h1 {
-                font-size: 1.8em; /* Slightly smaller heading on mobile */
+                font-size: 1.8em;
             }
             p {
-                font-size: 1em; /* Adjust paragraph font size for mobile */
+                font-size: 1em;
+            }
+            .logo {
+                 margin: 20px auto; /* Slightly adjust logo margin on mobile */
             }
         }
     </style>
@@ -65,9 +65,12 @@
 
     <div class="container">
         <h1>Coming Soon!</h1>
-        <p><strong>Website showcasing Sarah Boylan's paintings</strong></p>
-        <p>This site is currently under construction.<br>Please check back later.</p>
-        </div>
+
+        <img class="logo" src="images/sarart.png" alt="Sarart Logo">
+
+        <p class="intro-paragraph"><strong>Website showcasing Sarah Boylan's paintings</strong></p>
+        <p>This site is currently under construction.<br>Please check back later</p>
+    </div>
 
 </body>
 </html>
