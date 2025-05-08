@@ -1,79 +1,829 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Boylan Art - Coming Soon!</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px 30px;
-            background-color: #ffffff;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-        h1 {
-            color: #0056b3;
-            font-size: 2em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 1em;
-        }
-        .intro-paragraph {
-             margin-top: 0.5em;
-        }
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sarah Boylan Art</title>
+        <meta name="description" content="Website showcasing Sarah Boylan's paintings">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .logo {
-            display: block;
-            /* Default: Max 50% of container width (for larger screens) */
-            max-width: 50%;
-            height: auto;
-            margin: 25px auto;
-        }
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-        /* Media Query for smaller screens (600px or less) */
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px 15px;
-                padding: 15px 20px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            p {
-                font-size: 1em;
-            }
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-            /* ** TWEAKED LOGO SIZE FOR MOBILE ** */
-            .logo {
-                 margin: 20px auto;
-                 /* Override: Allow logo to take up more width on small screens */
-                 max-width: 90%; /* <--- CHANGE HERE: Increased from 50% */
-            }
-            /* ** END MOBILE LOGO TWEAK ** */
-        }
-    </style>
-</head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/sarart.css">
+
+        <script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+
 <body>
 
-    <div class="container">
-        <h1>Coming Soon!</h1>
-        <img class="logo" src="images/sarart.png" alt="Sarart Logo">
-        <p class="intro-paragraph"><strong>Website showcasing Sarah Boylan's paintings</strong></p>
-        <p>This site is currently under construction.<BR>Please check back later.</p>
+
+<!------------------------ HEADER ------------------------>
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top"><em>S</em>arah <em>B</em>oylan</a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">About</a></li>
+                        <li><a href="#" class="scroll-link" data-id="portfolio">Gallery</a></li>
+                        <!-- <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li> EditNW-->
+                        <li><a href="#" class="scroll-link" data-id="contact-us">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+<!------------------------ HOME ------------------------>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="text-content">
+                <img class="logo" src="img/sarart.png" alt="Sarart Logo">
+                <h2><em>SARAH</em> <span> BOYLAN</span> ART</h2>
+                <p>Modern artwork in acrylic and mixed media</p>
+                <div class="primary-white-button">
+                    <a href="#" class="scroll-link" data-id="about">scroll for more</a>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+<!------------------------ ABOUT ------------------------>
+
+    <section id="about" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="img/about_icon_01.png" alt="">
+                        </div>
+                        <h4>My Background</h4>
+                        <div class="line-dec"></div>
+                        <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">scroll for more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="img/about_icon_02.png" alt="">
+                        </div>
+                        <h4>My Influences</h4>
+                        <div class="line-dec"></div>
+                        <p>Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. Duis mollis.</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">scroll for more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="img/about_icon_03.png" alt="">
+                        </div>
+                        <h4>My Current Work</h4>
+                        <div class="line-dec"></div>
+                        <p>Etiam quis ullamcorper augue. Morbi leo libero, malesuada eget eleifend eu, interdum sed augue. Sed tempor mi quis rhoncus convallis.</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">scroll for more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="img/about_icon_04.png" alt="">
+                        </div>
+                        <h4>Buying My Work</h4>
+                        <div class="line-dec"></div>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent viverra, nunc et mollis fermentum.</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">scroll for more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!------------------------ GALLERY ------------------------>
+
+    <section id="portfolio">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="section-heading">
+                            <h4>Gallery</h4>
+                            <div class="line-dec"></div>
+                            <p>This is my on-line gallery. I'm happy to part with some of the works which are for sale; others are not for sale. If you like what you see, or wish to enquire about commissioning me, please Contact Me (below).</p>
+                            <div class="filter-categories">
+                                <ul class="project-filter">
+                                    <li class="filter" data-filter="all"><span>All</span></li> <!-- original filter al_l -->
+                                    <li class="filter" data-filter="people"><span>People</span></li> <!-- original filter brandin_g -->
+                                    <li class="filter" data-filter="landscapes"><span>Landscapes</span></li> <!-- original filter graphi_c -->
+                                    <li class="filter" data-filter="animals"><span>Animals</span></li> <!-- original filter natur_e -->
+                                    <li class="filter" data-filter="miscellaneous"><span>Miscellaneous</span></li> <!-- original filter animatio_n -->
+                                    <li class="filter" data-filter="forsale"><span>For Sale</span></li> <!-- original filter NONE -->
+                                    <li class="filter" data-filter="sold"><span>Sold</span></li> <!-- original filter NONE -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="projects-holder-3">
+                            <div class="projects-holder">
+                                <div class="row">
+
+<!-- LIST OF PICTURES IN GALLERY START ----------------------------------------------------------------------------------------------------------------->
+
+
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Blue Landscape, acrylic on canvass, unframed, 60c60, ppp.jpg" data-lightbox="image-1" data-title="Blue Landscape, acrylic on canvass, unframed, 60c60, ppp">
+                                                    <img src="art/landscapes/thumb/Blue Landscape, acrylic on canvass, unframed, 60c60, ppp.jpg" alt="Blue Landscape">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Burnt Sienna Landscape, acrylic on canvas Board, unframed, 30x30, ppp .jpg" data-lightbox="image-1" data-title="Burnt Sienna Landscape, acrylic on canvas Board, unframed, 30x30, ppp ">
+                                                    <img src="art/landscapes/thumb/Burnt Sienna Landscape, acrylic on canvas Board, unframed, 30x30, ppp .jpg" alt="Burnt Sienna Landscape">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Distant Steeple, acrylic on canvas, unframed, 30x30, PPP.jpg" data-lightbox="image-1" data-title="Distant Steeple, acrylic on canvas, unframed, 30x30, PPP">
+                                                    <img src="art/landscapes/thumb/Distant Steeple, acrylic on canvas, unframed, 30x30, PPP.jpg" alt="Distant Steeple">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Landscape Images, mixed media on canvas, framed, 52x42, PPP.jpg" data-lightbox="image-1" data-title="Landscape Images, mixed media on canvas, framed, 52x42, PPP">
+                                                    <img src="art/landscapes/thumb/Landscape Images, mixed media on canvas, framed, 52x42, PPP.jpg" alt="Landscape Images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Looking Afar, mixed media on canvas, framed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Looking Afar, mixed media on canvas, framed, CMxCM, PPP">
+                                                    <img src="art/landscapes/thumb/Looking Afar, mixed media on canvas, framed, CMxCM, PPP.jpg" alt="Looking Afar">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Misty Landscape, mixed media on canvas, unframed, 60x60, PPP.jpg" data-lightbox="image-1" data-title="Misty Landscape, mixed media on canvas, unframed, 60x60, PPP">
+                                                    <img src="art/landscapes/thumb/Misty Landscape, mixed media on canvas, unframed, 60x60, PPP.jpg" alt="Misty Landscape">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Otty Lake Sunset, acrylic on canvas, unframed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Otty Lake Sunset, acrylic on canvas, unframed, CMxCM, PPP">
+                                                    <img src="art/landscapes/thumb/Otty Lake Sunset, acrylic on canvas, unframed, CMxCM, PPP.jpg" alt="Otty Lake Sunset">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Rain Showered Cliff, mixed media on canvas, unframed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Rain Showered Cliff, mixed media on canvas, unframed, CMxCM, PPP">
+                                                    <img src="art/landscapes/thumb/Rain Showered Cliff, mixed media on canvas, unframed, CMxCM, PPP.jpg" alt="Rain Showered Cliff">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Small Trees in Abstract, acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Small Trees in Abstract, acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/landscapes/thumb/Small Trees in Abstract, acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="Small Trees in Abstract">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix landscapes forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/landscapes/Soft Landscape, mixed media on canvas, unframed, 60x60, PPP.jpg" data-lightbox="image-1" data-title="Soft Landscape, mixed media on canvas, unframed, 60x60, PPP">
+                                                    <img src="art/landscapes/thumb/Soft Landscape, mixed media on canvas, unframed, 60x60, PPP.jpg" alt="Soft Landscape">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Abstract Colours, acrylic on canvas, unframed, 40x40, PPP.jpg" data-lightbox="image-1" data-title="Abstract Colours, acrylic on canvas, unframed, 40x40, PPP">
+                                                    <img src="art/miscellaneous/thumb/Abstract Colours, acrylic on canvas, unframed, 40x40, PPP.jpg" alt="Abstract Colours">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Abstract Neutral, mixed media on canvas, unframed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Abstract Neutral, mixed media on canvas, unframed, CMxCM, PPP">
+                                                    <img src="art/miscellaneous/thumb/Abstract Neutral, mixed media on canvas, unframed, CMxCM, PPP.jpg" alt="Abstract Neutral">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Colour Sweep, Acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Colour Sweep, Acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/miscellaneous/thumb/Colour Sweep, Acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="Colour Sweep">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Colour Pieces, oil on canvas, framed, CMxCM,ppp.jpg" data-lightbox="image-1" data-title="Colour Pieces, oil on canvas, framed, CMxCM,ppp">
+                                                    <img src="art/miscellaneous/thumb/Colour Pieces, oil on canvas, framed, CMxCM,ppp.jpg" alt="Colour Pieces">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Colours in Compliment, acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Colours in Compliment, acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/miscellaneous/thumb/Colours in Compliment, acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="Colours in Compliment">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Faded Autumn, acrylic on canvas,unframed, 60x60, PPP.jpg" data-lightbox="image-1" data-title="Faded Autumn, acrylic on canvas,unframed, 60x60, PPP">
+                                                    <img src="art/miscellaneous/thumb/Faded Autumn, acrylic on canvas,unframed, 60x60, PPP.jpg" alt="Faded Autumn">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Fête,acrylic on canvas, unframed,60x60, ppp.jpg" data-lightbox="image-1" data-title="Fête,acrylic on canvas, unframed,60x60, ppp">
+                                                    <img src="art/miscellaneous/thumb/Fête,acrylic on canvas, unframed,60x60, ppp.jpg" alt="Fête">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Monarda in Flower, acrylic on deep canvas, unframed, 15x15, PPP.jpg" data-lightbox="image-1" data-title="Monarda in Flower, acrylic on deep canvas, unframed, 15x15, PPP">
+                                                    <img src="art/miscellaneous/thumb/Monarda in Flower, acrylic on deep canvas, unframed, 15x15, PPP.jpg" alt="Monarda in Flower">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Purple Tulips, acrylic on canvas, unframed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Purple Tulips, acrylic on canvas, unframed, CMxCM, PPP">
+                                                    <img src="art/miscellaneous/thumb/Purple Tulips, acrylic on canvas, unframed, CMxCM, PPP.jpg" alt="Purple Tulips">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Small Abstract, acrylic on canvas, unframed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Small Abstract, acrylic on canvas, unframed, CMxCM, PPP">
+                                                    <img src="art/miscellaneous/thumb/Small Abstract, acrylic on canvas, unframed, CMxCM, PPP.jpg" alt="Small Abstract">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Sunflowers, acrylic on canvas, unframed,CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Sunflowers, acrylic on canvas, unframed,CMxCM, ppp">
+                                                    <img src="art/miscellaneous/thumb/Sunflowers, acrylic on canvas, unframed,CMxCM, ppp.jpg" alt="Sunflowers">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Tree Bark, oil on canvas, framed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Tree Bark, oil on canvas, framed, CMxCM, ppp">
+                                                    <img src="art/miscellaneous/thumb/Tree Bark, oil on canvas, framed, CMxCM, ppp.jpg" alt="Tree Bark">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix miscellaneous forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/miscellaneous/Tree Tops, acrylic on canvas, framed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="Tree Tops, acrylic on canvas, framed, CMxCM, PPP">
+                                                    <img src="art/miscellaneous/thumb/Tree Tops, acrylic on canvas, framed, CMxCM, PPP.jpg" alt="Tree Tops">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/Lady With a Bow, acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Lady With a Bow, acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/people/thumb/Lady With a Bow, acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="Lady With a Bow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/Proud Woman, acrylic on canvas, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Proud Woman, acrylic on canvas, CMxCM, ppp">
+                                                    <img src="art/people/thumb/Proud Woman, acrylic on canvas, CMxCM, ppp.jpg" alt="Proud Woman">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/A Woman Thinking, acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="A Woman Thinking, acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/people/thumb/A Woman Thinking, acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="A Woman Thinking">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/An Interested Woman, acrylic on canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="An Interested Woman, acrylic on canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/people/thumb/An Interested Woman, acrylic on canvas, unframed, CMxCM, ppp.jpg" alt="An Interested Woman">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/Nick, , , , NFS.jpg" data-lightbox="image-1" data-title="Nick, , , , NFS">
+                                                    <img src="art/people/thumb/Nick, , , , NFS.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix people forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/people/A Thoughtful Boy, acrylic on canvas, framed, CMxCM, PPP.jpg" data-lightbox="image-1" data-title="A Thoughtful Boy, acrylic on canvas, framed, CMxCM, PPP">
+                                                    <img src="art/people/thumb/A Thoughtful Boy, acrylic on canvas, framed, CMxCM, PPP.jpg" alt="A Thoughtful Boy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Wee Harris,,,, NFS.jpg" data-lightbox="image-1" data-title="Wee Harris (sold)">
+                                                    <img src="art/animals/thumb/Wee Harris,,,, NFS.jpg" alt="Wee Harris">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals forsale">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Bull Elephant, Acrylic on Canvas, unframed, CMxCM, ppp.jpg" data-lightbox="image-1" data-title="Bull Elephant, Acrylic on Canvas, unframed, CMxCM, ppp">
+                                                    <img src="art/animals/thumb/Bull Elephant, Acrylic on Canvas, unframed, CMxCM, ppp.jpg" alt="Bull Elephant">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Maple,,,, Sold.jpg" data-lightbox="image-1" data-title="Maple,,,, Sold">
+                                                    <img src="art/animals/thumb/Maple,,,, Sold.jpg" alt="Maple">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Milly, , , , NFS.jpg" data-lightbox="image-1" data-title="Milly, , , , NFS">
+                                                    <img src="art/animals/thumb/Milly, , , , NFS.jpg" alt="Milly">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Sheena,,,, Sold.jpg" data-lightbox="image-1" data-title="Sheena,,,, Sold">
+                                                    <img src="art/animals/thumb/Sheena,,,, Sold.jpg" alt="Sheena">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+                                    <div class="col-md-6 col-sm-6 project-item mix animals sold">
+                                        <div class="thumb">
+                                            <div class="image">
+                                                <a href="art/animals/Teddy,,,, Sold.jpg" data-lightbox="image-1" data-title="Teddy,,,, Sold">
+                                                    <img src="art/animals/thumb/Teddy,,,, Sold.jpg" alt="Teddy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!----------------- item ------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- LIST OF PICTURES IN GALLERY END ------------------------------------------------------------------------------------------------------------------->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------ TESTIMONIALS ------------------------>
+<!--
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div id="owl-testimonials" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>� Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan molestie et quis justo. �</p>
+                                <h4>George Rich</h4>
+                                <span>Web Designer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>� Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. �</p>
+                                <h4>John Henry</h4>
+                                <span>New Manager</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>� Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac velit. Curabitur laoreet massa et fringilla sagittis. �</p>
+                                <h4>Danny Cute</h4>
+                                <span>CEO Founder</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>� Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non nisi iaculis vestibulum. Aliquam erat volutpat. �</p>
+                                <h4>Richard Beal</h4>
+                                <span>CSS Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+<!------------------------ BLOG POSTS ------------------------>
+<!--
+    <div class="tabs-content" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="col-md-4">
+                        <div class="section-heading">
+                            <h4>My Blog Posts</h4>
+                            <div class="line-dec"></div>
+                            <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.</p>
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <li><a href="#tab1" class="active">Nulla eget convallis augue</a></li>
+                                <li><a href="#tab2">Quisque ultricies maximus</a></li>
+                                <li><a href="#tab3">Sed vel elit et lorem</a></li>
+                                <li><a href="#tab4">Vivamus purus neque</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <img src="img/blog_item_01.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Nulla eget convallis augue</h4>
+                                    <span><a href="#">Digital Marketing</a> / <a href="#">Honey</a> / <a href="#">26 September 2017</a></span>
+                                    <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </div>
+                            </div>
+                            <div id="tab2">
+                                <img src="img/blog_item_02.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Quisque ultricies maximus</h4>
+                                    <span><a href="#">people</a> / <a href="#">David</a> / <a href="#">14 September 2017</a></span>
+                                    <p>Etiam fringilla posuere pretium. Maecenas tempor pellentesque elit in dapibus. Curabitur viverra urna sem, ut sollicitudin sem congue vel. Donec fringilla augue in justo molestie fermentum quis ac mi.</p>
+                                </div>
+                            </div>
+                            <div id="tab3">
+                                <img src="img/blog_item_03.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Sed vel elit et lorem</h4>
+                                    <span><a href="#">Web Design</a> / <a href="#">William</a> / <a href="#">20 August 2017</a></span>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id ipsum porta, dictum sem sed, bibendum quam. Maecenas mattis risus eget orci rhoncus.</p>
+                                </div>
+                            </div>
+                            <div id="tab4">
+                                <img src="img/blog_item_04.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Vivamus purus neque</h4>
+                                    <span><a href="#">E-Commerce</a> / <a href="#">George</a> / <a href="#">14 August 2017</a></span>
+                                    <p>Aliquam erat volutpat. Nulla at nunc nec ante rutrum congue id in diam. Nulla at lectus non turpis placerat volutpat lacinia ut mi. Quisque ultricies maximus justo a blandit. Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi. Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+<!------------------------ CONTACT ------------------------>
+
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Contact</h4>
+                        <div class="line-dec"></div>
+                        <p>Please feel free to contact me with requests, suggestions, purchase queries or any art chat. I'd love to hear from you.</p>
+                        <div class="pop-button">
+                            <h4>contact me</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="pop">
+                        <span>?</span>
+<!--                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form> -->
+
+                        <!-- Replaced Form section by MS CoPilot -->
+                        <form id="contact" action="https://docs.google.com/forms/d/1jSYq3Tav_Ri78Avyq7zy4sWDGn65Ve5vknlR1WSxnpY/formResponse" method="POST" target="_blank">
+                            <input type="hidden" name="entry.539216923" id="name">
+                            <input type="hidden" name="entry.330387478" id="email">
+                            <input type="hidden" name="entry.364538686" id="message">
+                            <!---->
+                            <input type="text" class="form-control" placeholder="Your name..." required oninput="document.getElementById('name').value=this.value">
+                            <input type="email" class="form-control" placeholder="Your email..." required oninput="document.getElementById('email').value=this.value">
+                            <textarea class="form-control" placeholder="Your message..." required oninput="document.getElementById('message').value=this.value"></textarea>
+                            <!---->
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------------------ GOOGLE MAP ------------------------>
+
+    <div id="map">
+    	<!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+        -->
+   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45300.08904372335!2d-1.1569581648208391!3d52.951600741548155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1734832999386!5m2!1sen!2suk" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4819.590614937283!2d-1.260589476844545!3d52.844073338126364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1744632363530!5m2!1sen!2suk" width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40584.39068865655!2d-1.2596777024349726!3d52.84804058848964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1744632792651!5m2!1sen!2suk" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+
+<!------------------------ FOOTER ------------------------>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="logo">
+                        <a class="logo-ft scroll-top" href="#"><em>S</em>arah<em> B</em>oylan</a>
+                        <p>Copyright &copy; 2024 Sarah Boylan
+                       <br>Design: Nick Willder with Templatemo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="location">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>Kingston on Soar</li>
+							<li>Nottingham</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="contact-info">
+                        <h4>More Info</h4>
+                        <ul>
+                            <li>+44 7930 487890</li>
+                            <li>sarah@boylan.me.uk</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="connect-us">
+                        <h4>Get Social with me</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
 </body>
 </html>
